@@ -13,7 +13,7 @@ Vue.use(Router)
 
 const router = new Router({
   mode: 'history',
-  // base: '',
+  // base: 'hash',
   routes
 })
   const whiteList = ['/cas/index','/error/index','/error/maintenance']

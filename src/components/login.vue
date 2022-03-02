@@ -1,6 +1,6 @@
 <template>
   <div class="login-container" style="background: #ECF6FF;">
-    <div class="qu-header" style="height: 85px;padding:  0 75px;overflow: hidden;">
+    <!-- <div class="qu-header" style="height: 85px;padding:  0 75px;overflow: hidden;">
       <div class="header-left" style="height: 85px;">
         <img src="../assets/images/logo.png" class="header-logo" style="width: 435px;">
       </div>
@@ -11,7 +11,7 @@
 					</span>
 				</span>
       </div>
-    </div>
+    </div> -->
     <div class="login-inner-box">
 
 
@@ -67,7 +67,7 @@
     line-height: 13px;"
                                class="login-input login-btn" @click="login" id="login">登 &nbsp;&nbsp;&nbsp; 录
           </el-button></span>
-            <span style="float: right;color: #fff;font-size: 14px;cursor: pointer" @click="forgetpassword=false"> 忘记密码？</span>
+            <span style="float: right;color: #fff;font-size: 14px;cursor: pointer;margin-top: 7px;" @click="forgetpassword=false"> 忘记密码？</span>
           </div>
 
         </div>
