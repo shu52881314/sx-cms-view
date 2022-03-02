@@ -81,11 +81,12 @@
     methods: {
       handleAvatarSuccess(res, file) {
       	let o;
-      		if (process.env.NODE_ENV === 'production') {
-                o = JSON.parse(Decrypt(res))
-           } else {
+        // 暂时去掉---
+      		// if (process.env.NODE_ENV === 'production') {
+          //       o = JSON.parse(Decrypt(res))
+          //  } else {
            	o = res
-           }
+          //  }
 			if (o && o.data) {
 
 				this.$emit('uploadSuccessed', o.data)

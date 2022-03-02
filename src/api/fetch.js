@@ -86,19 +86,20 @@ axios.interceptors.request.use(config => {
   if (config.method === 'post') {
     startLoading()
     if (config.data) {
+      // 暂时去掉---
+      // if (process.env.NODE_ENV === 'production') {
 
-      if (process.env.NODE_ENV === 'production') {
+      //   let data = encodeURI(Encrypt(JSON.stringify(config.data)))
+      //   data =   data.replace("+","%2B")
+      //   config.data = qs.stringify({params: data});
 
-        let data = encodeURI(Encrypt(JSON.stringify(config.data)))
-        data =   data.replace("+","%2B")
-        config.data = qs.stringify({params: data});
-
-      }
-      if (process.env.NODE_ENV === 'development') {
+      // }
+      // 暂时去掉---
+      // if (process.env.NODE_ENV === 'development') {
 
            // config.data = qs.stringify({params: encodeURI(Encrypt(JSON.stringify(config.data))) });
           config.data = qs.stringify({params: JSON.stringify(config.data)});
-      }
+      // }
 
 
 
@@ -108,22 +109,23 @@ axios.interceptors.request.use(config => {
 
       if (config.params) {
 
+        // 暂时去掉---
+        // if (process.env.NODE_ENV === 'production') {
 
-        if (process.env.NODE_ENV === 'production') {
+        //   let data = encodeURI(Encrypt(JSON.stringify(config.params)))
+        //   data =   data.replace("+","%2B")
+        //   config.params = {params: data};
 
-          let data = encodeURI(Encrypt(JSON.stringify(config.params)))
-          data =   data.replace("+","%2B")
-          config.params = {params: data};
-
-        }
-        if (process.env.NODE_ENV === 'development') {
+        // }
+        // 暂时去掉---
+        // if (process.env.NODE_ENV === 'development') {
 
               // let data = encodeURI(Encrypt(JSON.stringify(config.params)))
               // data =   data.replace("+","%2B")
               // config.params = {params: data};
 
            config.params = {params: JSON.stringify(config.params)};
-        }
+        // }
 
 
       }
@@ -142,26 +144,28 @@ axios.interceptors.response.use(res => {
 
   store.commit('setClick',false)
   let data = ''
-  if (process.env.NODE_ENV === 'production') {
+  // 暂时去掉---
+  // if (process.env.NODE_ENV === 'production') {
 
-           if(res.data.code != 10001){
+  //          if(res.data.code != 10001){
 
-             if(res.data.type){
-                  data = res.data;
-             }else{
-                  data = JSON.parse(Decrypt(res.data));
-             }
+  //            if(res.data.type){
+  //                 data = res.data;
+  //            }else{
+  //                 data = JSON.parse(Decrypt(res.data));
+  //            }
 
 
 
-           }else{
-             data = res.data
-           }
-  }
-  if (process.env.NODE_ENV === 'development') {
+  //          }else{
+  //            data = res.data
+  //          }
+  // }
+  // 暂时去掉---
+  // if (process.env.NODE_ENV === 'development') {
       data = res.data
       // data = JSON.parse(Decrypt(res.data));
-  }
+  // }
  if(data){
    endLoading()
  };

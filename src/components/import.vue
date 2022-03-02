@@ -63,17 +63,18 @@ import router from '../router/index'
    created(){
 
      if (this.dataObj) {
+       // 暂时去掉---
+      //  if (process.env.NODE_ENV === 'production') {
 
-       if (process.env.NODE_ENV === 'production') {
-
-           this.dataObjParmas.params = Encrypt(JSON.stringify(this.dataObj))
+      //      this.dataObjParmas.params = Encrypt(JSON.stringify(this.dataObj))
 
 
-       }
-       if (process.env.NODE_ENV === 'development') {
+      //  }
+      // 暂时去掉---
+      //  if (process.env.NODE_ENV === 'development') {
 
             this.dataObjParmas.params = JSON.stringify(this.dataObj)
-       }
+      //  }
 
 
 
@@ -196,14 +197,16 @@ import router from '../router/index'
       //   this.isLoading  = false
 
           let data = ''
-          if (process.env.NODE_ENV === 'production') {
-            let  data2 = JSON.parse(Decrypt(res));
-            data = data2
-          }
-          if (process.env.NODE_ENV === 'development') {
+          // 暂时去掉---
+          // if (process.env.NODE_ENV === 'production') {
+          //   let  data2 = JSON.parse(Decrypt(res));
+          //   data = data2
+          // }
+          // 暂时去掉---
+          // if (process.env.NODE_ENV === 'development') {
                data = res
                // data = JSON.parse(Decrypt(res.data));
-          }
+          // }
             if (data.code == 200) {
 
               // this.isLoading = false
