@@ -1,7 +1,7 @@
 'use strict'
 module.exports = {
   NODE_ENV: '"production"',
-  baseUrl: '"/manage/server"',
+  baseUrl: '"/api/manage/server"',
   //baseUrl: '"http://dev.schoolapi.anvdo.com/manage/server/v1"',
   // appId: '"123"',
   // aesKey: '"123"',
