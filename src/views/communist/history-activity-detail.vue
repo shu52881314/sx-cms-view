@@ -27,7 +27,7 @@
                      请下载导入模板，按格式修改后导入
                   </span>
               <span class="importTipsTitle-right">
-                    <a class="el-button el-button--text el-button--mini" href='https://2room.oss-cn-beijing.aliyuncs.com/template/%E5%8E%86%E5%8F%B2%E6%B4%BB%E5%8A%A8%E5%AD%A6%E7%94%9F%E5%AF%BC%E5%85%A5.xlsx' size='mini' >模板下载</a>
+                    <a class="el-button el-button--text el-button--mini" href='https://2class.oss-cn-shenzhen.aliyuncs.com/template/%E5%8E%86%E5%8F%B2%E6%B4%BB%E5%8A%A8%E5%AD%A6%E7%94%9F%E5%AF%BC%E5%85%A5.xlsx' size='mini' >模板下载</a>
                   </span>
             </div>
             <el-form-item label="" prop="name">

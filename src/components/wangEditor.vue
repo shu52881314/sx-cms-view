@@ -72,7 +72,7 @@ export default {
         var fileName = {
           file:files[0]
         }
-        let url = uploadOSS(fileName, "2room", folderName + "/").then(res => {
+        let url = uploadOSS(fileName, "2class", folderName + "/").then(res => {
           // 上传代码返回结果之后，将图片插入到编辑器中
           insert(res);
         })

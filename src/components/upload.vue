@@ -113,7 +113,7 @@
         } else{
            folderName = 'temp'
         }
-        let url =  uploadOSS(file,"2room",folderName + "/",0).then( res => {
+        let url =  uploadOSS(file,"2class",folderName + "/",0).then( res => {
 
           this.$emit('uploadSuccessed',res)
         })

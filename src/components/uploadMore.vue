@@ -231,7 +231,7 @@ import store from '@/store/index'
         } else{
           folderName = 'temp'
         }
-        let url =  uploadOSS(file,"2room",folderName + '/',1).then( res => {
+        let url =  uploadOSS(file,"2class",folderName + '/',1).then( res => {
 
           if (this.imageList.length) {
 

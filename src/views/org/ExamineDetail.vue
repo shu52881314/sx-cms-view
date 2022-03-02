@@ -602,7 +602,7 @@
         dialogImportCollegeVisible: false,
         titleName: '团',
         Uploadlink: this.$route.query.nature == 7 ? '/school/party/import/member' : '/school/group/import/member',
-        downHref: this.$route.query.nature == 7 ? 'https://2room.oss-cn-beijing.aliyuncs.com/template/%E5%85%9A%E7%BB%84%E7%BB%87%E6%88%90%E5%91%98%E5%AF%BC%E5%85%A5%E6%A8%A1%E6%9D%BF.xlsx' : 'https://2room.oss-cn-beijing.aliyuncs.com/template/%E5%9B%A2%E7%BB%84%E7%BB%87%E6%88%90%E5%91%98%E5%AF%BC%E5%85%A5%E6%A8%A1%E6%9D%BF.xlsx',
+        downHref: this.$route.query.nature == 7 ? 'https://2class.oss-cn-shenzhen.aliyuncs.com/template/%E5%85%9A%E7%BB%84%E7%BB%87%E6%88%90%E5%91%98%E5%AF%BC%E5%85%A5%E6%A8%A1%E6%9D%BF.xlsx' : 'https://2class.oss-cn-shenzhen.aliyuncs.com/template/%E5%9B%A2%E7%BB%84%E7%BB%87%E6%88%90%E5%91%98%E5%AF%BC%E5%85%A5%E6%A8%A1%E6%9D%BF.xlsx',
         detail: {},
         active: 'orgxiangqing',
         params: {

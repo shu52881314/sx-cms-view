@@ -384,7 +384,7 @@ export function uploadOSS(file, bucketName, fileName, isMore) {
         imageUrl: ""
       }
 
-      let bucketNames = "2room"
+      let bucketNames = "2class"
 
       let random_name = random_string(6) + '_' + new Date().getTime() + '.' + file.file.name.split('.').pop()
       var  schoolId=JSON.parse(localStorage.getItem('schoolId'))

@@ -78,7 +78,7 @@
 		                  </span>
               <span class="importTipsTitle-right">
 												<a class="el-button el-button--text el-button--mini"
-                           href='https://2room.oss-cn-beijing.aliyuncs.com/template/%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE%E8%8E%B7%E5%A5%96%E5%AD%A6%E7%94%9F.xlsx'
+                           href='https://2class.oss-cn-shenzhen.aliyuncs.com/template/%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE%E8%8E%B7%E5%A5%96%E5%AD%A6%E7%94%9F.xlsx'
                            size='mini'>模板下载</a>
 		                  </span>
             </div>

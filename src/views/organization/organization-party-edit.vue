@@ -300,7 +300,7 @@
         this.dialogVisible = false;
       },
       httpRequest(file) {
-        let url = uploadOSS(file, "2room", 'organization' + "/", 0).then(res => {
+        let url = uploadOSS(file, "2class", 'organization' + "/", 0).then(res => {
           this.uploadSuccessed(res)
         })
       },
