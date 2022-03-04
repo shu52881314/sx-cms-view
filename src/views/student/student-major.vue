@@ -287,8 +287,6 @@
   var validGrade = (rule, value, callback) => {
     if (!value) {
       callback(new Error('请输入年级'))
-    } else if (!isvalidGrade(value)) {
-      callback(new Error('年级必须为四位'))
     } else {
       callback()
     }

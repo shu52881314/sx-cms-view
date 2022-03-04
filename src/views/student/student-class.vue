@@ -488,15 +488,10 @@
 <script>
   import axios from 'axios'
   import {uploadOSS} from '@/utils/filters';
-  import {
-    isvalidGrade
-  } from '@/utils/validate'
 
   var validPhone = (rule, value, callback) => {
     if (!value) {
       callback(new Error('请正确输入年级'))
-    } else if (!isvalidGrade(value)) {
-      callback(new Error('年级必须为四位'))
     } else {
       callback()
     }
